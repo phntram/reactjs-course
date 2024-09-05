@@ -6,6 +6,9 @@ import ClassBasedComponent from './components/class-based-component';
 import FunctionalComponent from './components/functional-component';
 import ProductList from './components/products';
 
+// Props
+const dummyProductData = ["Product 1", "Product 2", "Product 3"];
+
 function App() {
 
 	return (
@@ -14,7 +17,7 @@ function App() {
 			{/* <ClassBasedComponent></ClassBasedComponent>
 			<FunctionalComponent /> */}
 
-			<ProductList />
+			<ProductList listOfProducts={dummyProductData} />
 		</>
 	);
 }
