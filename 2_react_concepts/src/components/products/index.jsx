@@ -12,7 +12,7 @@ function ProductList(props) {
             <ul>
                 {
                     // dummyProductData.map((item, index) => <li key={index}>{item}</li>)
-                    listOfProducts.map((item) => <li>{item}</li>)
+                    listOfProducts.map((item, index) => <li key={index}>{item}</li>)
                 }
             </ul>
         </div>
