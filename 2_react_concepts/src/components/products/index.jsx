@@ -1,5 +1,5 @@
 import ProductItem from "./components/product-item";
-import style from "./style.css";
+import "./style.css";
 
 
 function ProductList(props) {
@@ -7,7 +7,7 @@ function ProductList(props) {
     console.log(props);
     return (
         <div>
-            <h3 className={style.title}>ECommerce Project</h3>
+            <h3 className="title">ECommerce Project</h3>
             {/* <ProductItem /> */}
 
             <ul>

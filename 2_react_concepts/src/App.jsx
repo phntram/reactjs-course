@@ -14,10 +14,10 @@ function App() {
 	return (
 		<>
 			<h1>ReactJs Concepts 2024</h1>
-			{/* <ClassBasedComponent></ClassBasedComponent>
-			<FunctionalComponent /> */}
+			<ClassBasedComponent></ClassBasedComponent>
+			{/* <FunctionalComponent /> */}
 
-			<ProductList listOfProducts={dummyProductData} />
+			{/* <ProductList listOfProducts={dummyProductData} /> */}
 		</>
 	);
 }
