@@ -8,6 +8,7 @@ import ProductList from './components/products';
 import Users from './components/users';
 import ComponentButtonContextConcept from './components/context-concept/button';
 import ComponentTextContextConcept from './components/context-concept/text';
+import UseReducerExample from './components/use-reducer-example';
 
 // Props
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
@@ -25,8 +26,11 @@ function App() {
 			{/* <Users /> */}
 
 			{/* context Concept */}
-			<ComponentButtonContextConcept />
-			<ComponentTextContextConcept />
+			{/* <ComponentButtonContextConcept /> */}
+			{/* <ComponentTextContextConcept /> */}
+
+			{/* useReducer hook */}
+			<UseReducerExample />
 		</>
 	);
 }
