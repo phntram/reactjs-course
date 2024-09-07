@@ -6,6 +6,8 @@ import ClassBasedComponent from './components/class-based-component';
 import FunctionalComponent from './components/functional-component';
 import ProductList from './components/products';
 import Users from './components/users';
+import ComponentButtonContextConcept from './components/context-concept/button';
+import ComponentTextContextConcept from './components/context-concept/text';
 
 // Props
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
@@ -20,7 +22,11 @@ function App() {
 
 			{/* <ProductList listOfProducts={dummyProductData} name="Roxy" city="ABC XYZ" /> */}
 
-			<Users />
+			{/* <Users /> */}
+
+			{/* context Concept */}
+			<ComponentButtonContextConcept />
+			<ComponentTextContextConcept />
 		</>
 	);
 }
