@@ -9,7 +9,13 @@ export const GlobalContext = createContext(null);
 function GlobalState({ children }) {
 
     const [theme, setTheme] = useState('light');
-    return <GlobalContext.Provider value={{ theme, setTheme }}>{children}</GlobalContext.Provider>;
+
+    function handleChangeThemeOnButtonClick() {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    }
+
+    // return <GlobalContext.Provider value={{ theme, setTheme }}>{children}</GlobalContext.Provider>;
+    return <GlobalContext.Provider value={{ theme, handleChangeThemeOnButtonClick }}>{children}</GlobalContext.Provider>;
 }
 
 export default GlobalState;
