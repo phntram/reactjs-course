@@ -1,8 +1,8 @@
 import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
 import { blue } from '@mui/material/colors';
 
-function TodoItem({ todo }) {
-    console.log(todo);
+function TodoItem({ todo, fetchDetailOfTodo }) {
+    // console.log(todo);
     return (
         <Card sx={{
             maxWidth: 250,
@@ -16,16 +16,18 @@ function TodoItem({ todo }) {
                 <Typography variant='h5' color={"black"}>{todo?.todo}</Typography>
             </CardContent>
             <CardActions>
-                <Button sx={{
-                    backgroundColor: "#000000",
-                    color: "#fff",
-                    opacity: "0.75",
-                    "&:hover": {
+                <Button
+                    onClick={() => fetchDetailOfTodo(todo?.id)}
+                    sx={{
                         backgroundColor: "#000000",
                         color: "#fff",
-                        opacity: "1",
-                    }
-                }}>Details</Button>
+                        opacity: "0.75",
+                        "&:hover": {
+                            backgroundColor: "#000000",
+                            color: "#fff",
+                            opacity: "1",
+                        }
+                    }}>Details</Button>
             </CardActions>
         </Card>
     );
