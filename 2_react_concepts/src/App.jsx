@@ -9,6 +9,7 @@ import Users from './components/users';
 import ComponentButtonContextConcept from './components/context-concept/button';
 import ComponentTextContextConcept from './components/context-concept/text';
 import UseReducerExample from './components/use-reducer-example';
+import FormComponent from './components/form';
 
 // Props
 const dummyProductData = ["Product 1", "Product 2", "Product 3"];
@@ -30,7 +31,9 @@ function App() {
 			{/* <ComponentTextContextConcept /> */}
 
 			{/* useReducer hook */}
-			<UseReducerExample />
+			{/* <UseReducerExample /> */}
+
+			<FormComponent />
 		</>
 	);
 }
